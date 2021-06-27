@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+    <title>
+        letter to dean
+    </title>
+    <link rel = "stylesheet" href="frontend_1.css">
+
+
+</head>
+
+<body>
+    <br>
+    <h2> <u><b>Application Letter</b></u></h2>
+
+    <p>To,</p>
+    <p>The Principal/Dean,</p>
+    <p>KIET Group of Institutions,</p>
+    <p>NH-58 Muradnagar Ghaziabad.</p>
+
+    Date: 29/05/2021 <br>
+    <br></br>
+
+    From,<br>
+    Durgesh Agrhari,<BR>
+    IT KIET GROUP OF INSTITUTONS<br>
+
+    <p><b>Subject: Request for Permission to Attend the Code Camp<b><br>
+
+        Respected Sir/Madam,<br>
+
+        With due respect, my name is Durgesh Agrhari, from IT department, having
+        roll number 1900290130061 and batch number 19-23.<br>
+
+        I am writing this letter to request permission for attending an Code Camp. I recently got selected for
+        Front End by Devsnest.<br>
+        The timings of the code camp
+        are 18:00 to 21:00.
+
+        This code camp being a really important and integral part of my learning procedures,<br> I request you to
+        consider
+        my situation and grant me permission for the same.
+
+        Look forward to your kind consideration.<br>
+        <br></b>
+        Yours Sincerely,<br>
+        Durgesh Agrhari,<br>
+        IT IV A,<br>
+        19-23
+        </div>
+</body>
+
+</html> 
