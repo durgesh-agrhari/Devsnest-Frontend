@@ -1,53 +1,71 @@
-var container = document.querySelector('.container');
-var value1 = document.querySelector('.input');
-var add1 = document.querySelector('.add');
+<!DOCTYPE html>
+<html lang="en">
 
-class item{
-    constructor(name)
-    {
-        this.create(name);
-    }
-    create(name)
-    {
-        var l1 = document.createElement('div');
-        l1.classList.add('item');
-        var input = document.createElement('input');
-        input.type = "text";
-        input.disabled=true;
-        input.value=name;
-        input.classList.add('item_input');
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
 
-        var remove = document.createElement('button');
-        remove.classList.add('remove');
-        remove.innerHTML = "Del";
-        remove.addEventListener('click',()=>this.remove(l1));
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">COVID-19 CASES</h1>
+        <br><br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Total active cases</th>
+                    <th>Total Deaths</th>
+                    <th>Total Recovered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="data">
 
-        container.appendChild(l1);
-        l1.appendChild(input);
-        l1.appendChild(remove);
-    }
-    remove(l1)
-    {
-        container.removeChild(l1);
-    }
-}
+                </tr>
+            </tbody>
+        </table>
 
-add1.addEventListener('click',check);
-window.addEventListener('keydown',(e)=>{
-    if(e.which==13)
-    {
-        check();
+        
+       
+        <button  onclick="refreshData()" type="button" class="btn btn-primary btn-lg btn-block">Refresh</button>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+
+    init()
+
+    function init() {
+        var url = "https://api.covid19api.com/summary"
+
+        $.get(url, function (data) {
+            console.log(data.Global)
+
+            data = `
+                
+                    <td>${data.Global.TotalConfirmed}</td>
+                    <td>${data.Global.TotalDeaths}</td>
+                    <td>${data.Global.TotalRecovered}</td>
+                
+                `
+            $("#data").html(data)
+        })
     }
-})
-function check()
-{
-    if(value1.value!="")
-    {
-        new item(value1.value);
-        value1.value="";
+
+    function clearData() {
+        $("#data").empty()
     }
-}
-function removeAll()
-{
-    document.querySelector('.contianer').innerHTML="";
-}
+    function refreshData() {
+        clearData()
+        init()
+    }
+
+
+</script>
+
+</html>
