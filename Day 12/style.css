@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: blueviolet;
+    box-sizing: border-box;
+    
+}
+.inputDiv 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    padding: 0.5rem 1 rem;
+    outline:none;
+    height: 50px;
+    border-radius: 5px;
+    width: 320px;
+    margin: 0.40rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+.btn{
+    height: 60px;
+    width: 70px;
+}
+
+.add{
+    outline: none;
+    border: none;
+    border-radius:5px ;
+    height:50px;
+    width:50px;
+    cursor:pointer;
+    transition: .5s;
+    margin: 0.25rem;
+    
+}
+.add:hover{
+    background-color: darkcyan;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+}
+.item_input{
+    background-color: white;
+    outline: none;
+    border:3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(235, 145, 145);
+    margin-top: 15px;
+    font-size: 20px;
+    width: 315px;
+}
+.remove{
+    background: none;
+    outline: none;
+    border:none;
+    color: black;
+    font-size:2rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.remove_btn{
+    margin-top: 35px;
+    color: rgb(182, 231, 91);
+    text-decoration: uppercase;
+    background: rgb(161, 99, 161);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    transition: all 0.4s ease 0s;
+    height: 55px;
+    width: 150px;
+}
