@@ -1,51 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.coupon {
-  border: 5px dotted #bbb;
-  width: 80%;
-  border-radius: 15px;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-.container {
-  padding: 2px 16px;
-  background-color: #f1f1f1;
-}
-
-.promo {
-  background: #ccc;
-  padding: 3px;
-}
-
-.expire {
-  color: red;
-}
-</style>
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="inputDiv">
+    <input type="text" class="input" placeholder="todo">
+    <button class="add">ADD</button>
+    </div>
+    <div class="container">
+        
+    
+    </div>
+    <div class="button_cont" style="text-align: center;">
+        <button class="remove_btn" onclick="removeAll()">Remove All</button>
 
-<div class="coupon">
-  <div class="container">
-    <h3>Company Logo</h3>
-  </div>
-  <img src="/w3images/hamburger.jpg" alt="Avatar" style="width:100%;">
-  <div class="container" style="background-color:white">
-    <h2><b>20% OFF YOUR PURCHASE</b></h2> 
-    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur. Sea te minim soleat senserit, ex quo luptatum tacimates voluptatum, salutandi delicatissimi eam ea. In sed nullam laboramus appellantur, mei ei omnis dolorem mnesarchum.</p>
-  </div>
-  <div class="container">
-    <p>Use Promo Code: <span class="promo">BOH232</span></p>
-    <p class="expire">Expires: Jan 03, 2021</p>
-  </div>
-</div>
-
+    </div>
+    <script src="script.js"></script>
+    
 </body>
-</html> 
+</html>
