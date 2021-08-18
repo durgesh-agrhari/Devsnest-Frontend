@@ -1,0 +1,28 @@
+button{
+  cursor: pointer;
+  width:5rem;
+  height:3rem;
+  font-size: 30px;
+}
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  user-select: none;
+}
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1em; */
+  font-weight: bold;
+  
+}
