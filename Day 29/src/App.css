@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #7E7E7E;
+}
+
+.App {
+  text-align: center;
+}
+
+.App dark {
+  background-color: black;
+  color: white;
+}
+
+.form {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form input {
+  padding: 0px 10px;
+}
+
+.form button {
+  margin: 0px 10px;
+}
+
+.card {
+  margin-top: 50px;
+  border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+
+.weather {
+  text-align: center;
+}
+
+.card .desc {
+  font-size: 0.8rem;
+}
+
+.card img {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.card.dark {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.card .place {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.card .temp {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.whp {
+  margin: 10px 0;
+}
+
+.whp .title {
+  font-size: 0.8rem;
+}
+
+.whp .data {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.whp .data .unit {
+  font-size: 0.8rem;
+}
+
+
+.toggle-theme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
